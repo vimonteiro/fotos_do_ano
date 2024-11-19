@@ -1,0 +1,103 @@
+/* Configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffe5e5;
+    color: #330000;
+}
+
+/* Cabeçalho e Menu Cascata */
+header {
+    background-color: #cc0000;
+    color: #fff;
+    padding: 1rem 0;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+.menu a:hover {
+    background-color: #ff6666;
+    border-radius: 5px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #cc0000;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.menu li {
+    position: relative;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+.submenu li {
+    margin: 0;
+    text-align: left;
+}
+.submenu a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+/* Galeria de Fotos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+.photo {
+    background-color: #fff;
+    border: 1px solid #cc0000;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.photo:hover {
+    transform: scale(1.05);
+}
+.photo img {
+    width: 100%;
+    height: auto;
+}
+.photo h3 {
+    background-color: #ff6666;
+    color: #fff;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+.photo p {
+    color: #660000;
+    padding: 0.5rem 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #cc0000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+footer p {
+    margin: 0;
+}
